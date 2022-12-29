@@ -1,0 +1,27 @@
+.main-home {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-grey-9);
+}
+
+:root {
+  --color-brand-1: #36cc60;
+  --color-brand-2: #289948;
+  --color-gradient: linear-gradient(#43ff78, #0fa239);
+
+  --white-fixed: #fff;
+  --black-fixed: #000;
+
+  --color-grey-1: #fffafa;
+  --color-grey-2: #ebe6e6;
+  --color-grey-3: #d6d2d2;
+  --color-grey-4: #adaaaa;
+  --color-grey-5: #999696;
+  --color-grey-6: #858282;
+  --color-grey-7: #5c5a5a;
+  --color-grey-8: #333232;
+  --color-grey-9: #1f1e1e;
+  --color-grey-10: #030303;
+
+  --radius-default: 5px;
+}
