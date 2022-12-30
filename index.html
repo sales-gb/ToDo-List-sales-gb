@@ -6,16 +6,112 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./src/assets/fontawesome-free-6.2.0-web/css/all.min.css">
   <title>To-Do List</title>
 </head>
 
 <body>
-  <main class="main-home">
-    <div class="container">
+  <main class="container">
+    <div class="toDo-container">
 
+      <h1 class="to-do-title">Sua lista de tarefas</h1>
+
+      <form id="add-form" class="form-control">
+        <div class="input-area">
+          <label for="add-tarefa">Adicionar tarefa</label>
+
+          <input type="text" id="add-input" placeholder="O que você quer fazer?">
+        </div>
+
+        <button type="submit"><i class="fa-solid fa-plus"></i></button>
+      </form>
+
+      <div class="hide">
+        <form id="edit-form" class="form-control">
+
+          <div class="input-area">
+            <label for="edit">Edite sua tarefa</label>
+
+            <input type="text" id="edit-input">
+          </div>
+
+          <button type="submit"><i class="fa-solid fa-check-double"></i></button>
+        </form>
+
+        <button type="button" id="cancel-btn">Cancelar</button>
+      </div>
+
+      <div id="tollBar">
+        <div id="search">
+
+          <form class="form-control">
+            <div class="input-area">
+              <label for="search">Pesquisar</label>
+
+              <input type="text" id="search-input" placeholder="Buscar...">
+            </div>
+
+            <button id="erase-btn" type="button"><i class="fa-solid fa-delete-left"></i></button>
+          </form>
+        </div>
+
+        <div id="filter">
+          <p>Filtrar</p>
+
+          <select id="filter-select">
+            <option value="all">Todos</option>
+            <option value="done">Feitos</option>
+            <option value="to-do">A fazer</option>
+          </select>
+        </div>
+      </div>
+
+      <ul class="toDo-list">
+        <li class="toDo-item">
+          <p>Estou fazendo algo aqui...</p>
+
+          <div class="btn-todo">
+            <button type="button" class="edit-todo">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+
+            <button type="button" class="finish-todo">
+              <i class="fa-solid fa-check"></i>
+            </button>
+
+            <button type="button" class="remove-todo">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+        </li>
+
+        <!-- <li class="toDo-item done">
+          <p>Estou fazendo algo aqui...</p>
+
+          <div class="btn-todo">
+            <button type="button" class="edit-todo">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+
+            <button type="button" class="finish-todo">
+              <i class="fa-solid fa-check"></i>
+            </button>
+
+            <button type="button" class="remove-todo">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+        </li>  -->
+      </ul>
     </div>
-
   </main>
+
+  <footer>
+    <p>© 2022 - <a rel="noopener noreferrer" target="_blank" href="https://sales-gb.github.io/portfolio-sales-gb/">Gabriel Sales</a></p>
+  </footer>
+
+
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
