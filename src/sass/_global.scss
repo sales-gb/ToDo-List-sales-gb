@@ -9,7 +9,7 @@ body {
     width: 70vw;
     margin: 0 auto;
   }
-  .toDo-container {
+  .todo-container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -50,10 +50,6 @@ body {
       }
     }
   }
-}
-
-.hide {
-  display: none;
 }
 
 :root {

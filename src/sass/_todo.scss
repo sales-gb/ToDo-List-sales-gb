@@ -1,4 +1,4 @@
-.toDo-container {
+.todo-container {
   .form-control {
     display: flex;
     gap: 0.625rem;
@@ -69,55 +69,57 @@
     }
   }
 
-  .toDo-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    padding: 30px 0;
-    justify-content: center;
-    align-items: center;
-    .toDo-item {
-      background: var(--color-grey-1);
-      color: var(--color-grey-10);
+  #todo-list-div {
+    .todo-list {
       display: flex;
-      width: 420px;
-      min-height: 50px;
-      height: auto;
-      padding: 10px;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 30px 0;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      border-radius: var(--radius-default);
-      p {
-        max-width: 40ch;
+      .todo-item {
+        background: var(--color-grey-1);
         color: var(--color-grey-10);
-      }
-      .btn-todo {
-        width: 100px;
         display: flex;
+        width: 420px;
+        min-height: 50px;
+        height: auto;
+        padding: 10px;
+        align-items: center;
         justify-content: space-between;
-        button {
-          background: transparent;
-          padding: 10px;
-          border: none;
-          font-size: 0.875rem;
+        border-radius: var(--radius-default);
+        p {
+          max-width: 40ch;
           color: var(--color-grey-10);
         }
-        button:hover {
-          transition: 0.4s;
-          color: var(--color-brand-3);
+        .btn-todo {
+          width: 100px;
+          display: flex;
+          justify-content: space-between;
+          button {
+            background: transparent;
+            padding: 10px;
+            border: none;
+            font-size: 0.875rem;
+            color: var(--color-grey-10);
+          }
+          button:hover {
+            transition: 0.4s;
+            color: var(--color-brand-3);
+          }
         }
       }
-    }
-    .done {
-      transition: 0.4s;
-      background: var(--color-brand-1);
-      p {
-        text-decoration: line-through;
-      }
-      .btn-todo {
-        button:hover {
-          transition: 0.4s;
-          color: var(--white-fixed);
+      .done {
+        transition: 0.4s;
+        background: var(--color-brand-1);
+        p {
+          text-decoration: line-through;
+        }
+        .btn-todo {
+          button:hover {
+            transition: 0.4s;
+            color: var(--white-fixed);
+          }
         }
       }
     }
@@ -133,4 +135,9 @@
   font-size: 18px;
   border: none;
   font-weight: 600;
+}
+
+.hide {
+  transition: 0.5s;
+  display: none;
 }
